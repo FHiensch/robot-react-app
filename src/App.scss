@@ -1,0 +1,35 @@
+html,
+body,
+#root,
+#wrapper {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    align-self: stretch;
+    display: flex;
+    flex-grow: 1;
+
+    article {
+        background-color: deepskyblue;
+        flex-grow: 1;
+        padding: 2rem;
+
+        #image-box {
+            height: 100%;
+            width: 100%;
+            background-image: url(./media/aufbau.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+}
